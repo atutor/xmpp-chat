@@ -32,12 +32,12 @@ while ($row = mysql_fetch_assoc($result)) {
 
 ob_start();
 ?>
-<link rel="stylesheet" href="<?php echo $_base_path; ?>/mods/chat_new/includes/side_menu.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $_base_path; ?>/mods/xmpp-chat/includes/side_menu.css" type="text/css" />
 	<div id="roster" aria-label="XMPP Chat contact list">
 		<?php
 		if (count($course_participants_online) == 0 && count($course_participants_offline) == 0) {
 			?> 
-			The course has no chat members yet. Join course chat <a href="<?php echo $_base_path; ?>mods/chat_new/index.php">here</a>.
+			The course has no chat members yet. Join course chat <a href="<?php echo $_base_path; ?>mods/xmpp-chat/index.php">here</a>.
 			<?php
 		}
 		if (count($course_participants_online) != 0) {
@@ -92,6 +92,6 @@ ob_start();
 $savant->assign('dropdown_contents', ob_get_contents());
 ob_end_clean();
 
-$savant->assign('title', _AT('chat_new')); // the box title
+$savant->assign('title', _AT('xmpp-chat')); // the box title
 $savant->display('include/box.tmpl.php');
 ?>

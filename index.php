@@ -3,36 +3,34 @@ define('AT_INCLUDE_PATH', '../../include/');
 require (AT_INCLUDE_PATH.'vitals.inc.php');
 
 $_custom_head .= '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="'.$_base_path.'mods/chat_new/js/libraries/jquery-cookie/jquery.cookie.js"></script>
+		<script type="text/javascript" src="'.$_base_path.'mods/xmpp-chat/js/libraries/jquery-cookie/jquery.cookie.js"></script>
 		
 				
-		<script type="text/javascript" src="'.$_base_path.'mods/chat_new/js/xmpp_client.js"></script>
-		<script type="text/javascript" src="'.$_base_path.'mods/chat_new/js/xmpp_console.js"></script>
-		<script type="text/javascript" src="'.$_base_path.'mods/chat_new/js/interface.js"></script>
+		<script type="text/javascript" src="'.$_base_path.'mods/xmpp-chat/js/xmpp_client.js"></script>
+		<script type="text/javascript" src="'.$_base_path.'mods/xmpp-chat/js/xmpp_console.js"></script>
+		<script type="text/javascript" src="'.$_base_path.'mods/xmpp-chat/js/interface.js"></script>
 				
-		<script type="text/javascript" src="'.$_base_path.'mods/chat_new/js/libraries/strophe&flXHR/strophe_sha1.js"></script>
-		<script type="text/javascript" src="'.$_base_path.'mods/chat_new/js/libraries/strophe&flXHR/sha1.js"></script>	
-	    <script type="text/javascript" src="'.$_base_path.'mods/chat_new/js/libraries/strophe&flXHR/strophe.muc.js"></script>
-	    <script type="text/javascript" src="'.$_base_path.'mods/chat_new/js/libraries/strophe&flXHR/flXHR.js"></script>
-	    <script type="text/javascript" src="'.$_base_path.'mods/chat_new/js/libraries/strophe&flXHR/strophe.flxhr.js"></script>	   
+		<script type="text/javascript" src="'.$_base_path.'mods/xmpp-chat/js/libraries/strophe&flXHR/strophe_sha1.js"></script>
+		<script type="text/javascript" src="'.$_base_path.'mods/xmpp-chat/js/libraries/strophe&flXHR/sha1.js"></script>	
+	    <script type="text/javascript" src="'.$_base_path.'mods/xmpp-chat/js/libraries/strophe&flXHR/strophe.muc.js"></script>
+	    <script type="text/javascript" src="'.$_base_path.'mods/xmpp-chat/js/libraries/strophe&flXHR/flXHR.js"></script>
+	    <script type="text/javascript" src="'.$_base_path.'mods/xmpp-chat/js/libraries/strophe&flXHR/strophe.flxhr.js"></script>	   
 	    		
-	    <script type="text/javascript" src="'.$_base_path.'mods/chat_new/js/libraries/moment.min.js"></script>';
+	    <script type="text/javascript" src="'.$_base_path.'mods/xmpp-chat/js/libraries/moment.min.js"></script>';
 
-$_custom_css = $_base_path.'mods/chat_new/module.css'; // use a custom stylesheet
+$_custom_css = $_base_path.'mods/xmpp-chat/module.css'; // use a custom stylesheet
 require (AT_INCLUDE_PATH.'header.inc.php');
 
 
 ?>
 
 	<div id="welcome" class="fl-container-flex90">
-		Welcome to the new version of chat!<br/><br/>
 		
-		In order to login you need a free account on <a href="https://www.talkr.im/">talkr.im</a> server that is used by the chat. 
-		By logging in you agree with the fact that <a href="https://www.talkr.im/">talkr.im</a> hosts the messages.<br/><br/>
+		To login you need a free account on <a href="https://www.talkr.im/">talkr.im</a>.
 		
-		It is highly recommended that you use the registered account only within the ATutor chat client to avoid loss of data or other undesirable consequences.<br/>
+		<br/>
 		
-		Please see <a href="<?php echo $_base_path; ?>mods/chat_new/ATutor_XMPP_Chat_READ_ME.pdf" target="_blank">the helping document</a> for more details.
+		Please see <a href="<?php echo $_base_path; ?>mods/xmpp-chat/ATutor_XMPP_Chat_READ_ME.pdf" target="_blank"> chat documentation</a> (pdf) for more details.
 		
 		<table id="welcome_form">
 			<tr>

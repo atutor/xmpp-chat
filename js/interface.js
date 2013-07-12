@@ -8,7 +8,7 @@ var Interface = {
 		var dataString = 'id=' + jQuery("div").filter(jQuery('#chat').find('div')[1]).attr('id');
 		jQuery.ajax({
 			type: "POST",
-			url: "ATutor/mods/chat_new/ajax/check_auth.php",
+			url: "mods/xmpp-chat/ajax/check_auth.php",
 			data: dataString,
 			cache: false,
 			success: function (exists) {
@@ -66,7 +66,7 @@ var Interface = {
 		var dataString = 'my_id=' + id;
 		jQuery.ajax({
 			type: "POST",
-			url: "ATutor/mods/chat_new/ajax/get_inbox.php",
+			url: "mods/xmpp-chat/ajax/get_inbox.php",
 			data: dataString,
 			cache: false,
 			success: function (data) {			
@@ -95,7 +95,7 @@ var Interface = {
 						var dataString = 'my_id=' + id + '&offset=' + offset;
 						jQuery.ajax({
 							type: "POST",
-							url: "ATutor/mods/chat_new/ajax/get_inbox.php",
+							url: "mods/xmpp-chat/ajax/get_inbox.php",
 							data: dataString,
 							cache: false,
 							success: function (data) {
