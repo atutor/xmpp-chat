@@ -18,7 +18,7 @@ define('AT_ADMIN_PRIV_XMPP_CHAT', $this->getAdminPrivilege());
 /*******
  * create a side menu box/stack.
  */
-$this->_stacks['xmpp-chat'] = array('title_var'=>'xmpp-chat', 'file'=>AT_INCLUDE_PATH.'../mods/xmpp-chat/includes/side_menu.inc.php');
+$this->_stacks['xmpp-chat'] = array('title_var'=>'xmpp_chat', 'file'=>AT_INCLUDE_PATH.'../mods/xmpp-chat/includes/side_menu.inc.php');
 
 /*******
  * create optional sublinks for module "detail view" on course home page
@@ -26,7 +26,7 @@ $this->_stacks['xmpp-chat'] = array('title_var'=>'xmpp-chat', 'file'=>AT_INCLUDE
  */
  
 // the text to display on module "detail view" when sublinks are not available
-$this->_pages['mods/xmpp-chat/index.php']['text']      = _AT('xmpp-chat_text');
+$this->_pages['mods/xmpp-chat/index.php']['text']      = _AT('xmpp_chat_text');
 
 /*******
  * if this module is to be made available to students on the Home or Main Navigation.
@@ -37,12 +37,12 @@ $_group_tool = $_student_tool = 'mods/xmpp-chat/index.php';
 /*******
  * student page.
  */
-$this->_pages['mods/xmpp-chat/index.php']['title_var'] = 'xmpp-chat';
-$this->_pages['mods/xmpp-chat/index.php']['img']       = 'mods/xmpp-chat/xmpp-chat.jpg';
+$this->_pages['mods/xmpp-chat/index.php']['title_var'] = 'xmpp_chat';
+$this->_pages['mods/xmpp-chat/index.php']['img']       = 'mods/xmpp-chat/chat-new.jpg';
 
 
 
-function xmpp-chat_get_group_url($group_id) {
+function xmpp_chat_get_group_url($group_id) {
 	return 'mods/xmpp-chat/index.php';
 }
 ?>

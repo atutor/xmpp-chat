@@ -1,0 +1,1 @@
+This module links into talkr.im to provide instant messaging capabilities in ATutor.
